@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Organisasi Fakultas Ilmu Komputer</title>
+	<style>
+	body{
+		margin: 0;
+		padding: 0;
+		font-family: Arial;
+	}
+
+	header{
+		background-image: url(capture-20181010-082023.png);
+		background-height: 150vh;
+		height:500px;
+		background-size:cover;
+		background-position: center;
+	}
+
+	ul{
+		float: right;
+		list-style-type: none;
+		margin-top: -40px;
+		margin-left: 250px;
+		position: absolute;
+	}
+
+	ul li{
+		display: inline-block;
+	}
+
+	ul li a {
+		text-decoration: none;
+		color:white;
+		padding: 5px 30px;
+		border: 0px ;
+		margin-left: 20%;
+	}
+	ul li a:hover{
+		background-color: grey;
+		color: white;
+	}
+
+	ul li.active a{
+		background-color: grey;
+		color:white;
+	}
+
+	.logo img{
+		float: left;
+		width: 100px;
+		height: auto;
+		margin-top: 12px;
+		position: absolute;
+	}
+	div.h1{
+		position: relative;
+		left: 105px;
+		top: 30px;
+	}
+	div.h2{
+		position: relative;
+		left: 105px;
+		top: 15px;
+	}
+	div.h3{
+		position: relative;
+		left: 550px;
+		top: -45px;
+	}
+{
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=kirim] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=kirim]:hover {
+    background-color: green;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: grey;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="main">
+			<div class="logo">
+				<img src="LOGO UNIVERSITAS JEMBER.png">
+			</div>
+			<div class="h1">
+				<h3 style="color: white">Fakultas Ilmu Komputer</h3>
+			</div>
+			<div class="h2">
+				<h5 style="color: white">UNIVERSITAS JEMBER</h5>
+			</div>
+			<div class="h3">
+				<h1 style="color: white">Organisasi Mahasiswa</h1>
+			</div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="ormawa.html">ORMAWA</a></li>
+				<li><a href="#">Information</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Join</a></li>
+				<li class="active"><a href="#">FAQ</a></li>
+			</ul>
+		</div>		
+	</head>
+	<body>
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label style="color: white" for="fname">Nama</label>
+      </div>
+      <div class="col-75">
+        <input style="color: white" type="text" id="fname" name="firstname">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label style="color: white" for="lname">NIM</label>
+      </div>
+      <div class="col-75">
+        <input style="color: white" type="text" id="lname" name="NIM"> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label style="color: white" for="Prodi">Prodi</label>
+      </div>
+      <div class="col-75">
+        <select id="Prodi" name="Prodi">
+        	<option value="Prodi">Prodi</option>
+          <option value="Sistem Informasi">Sistem Informasi</option>
+          <option value="Teknologi Informasi">Teknologi Informasi</option>
+          <option value="Informatika">Informatika</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label style="color: white"for="subjek">Subjek</label>
+      </div>
+      <div class="active"class="col-75">
+        <textarea id="subjek" name="subjek" placeholder="tulis sesuatu.." style="height:100px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="Kirim" value="Kirim">
+    </div>
+  </form>
+</div>
+
+	</body>
